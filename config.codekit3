@@ -114,6 +114,12 @@
 		"oAP": "\/todo-adhoc-form.html",
 		"oF": 2
 		},
+	"\/pages\/todo-everyones-tasks.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/todo-everyones-tasks.html",
+		"oF": 2
+		},
 	"\/pages\/todo-my-tasks.kit": {
 		"ft": 2048,
 		"oA": 0,
@@ -126,10 +132,28 @@
 		"oAP": "\/todo-template-form.html",
 		"oF": 2
 		},
+	"\/pages\/todo.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/todo.html",
+		"oF": 0
+		},
 	"\/todo-adhoc-form.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/todo-adhoc-form.html",
+		"oF": 0
+		},
+	"\/todo-everyones-tasks.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/todo-everyones-tasks.html",
+		"oF": 0
+		},
+	"\/todo-my-tasks.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/todo-my-tasks.html",
 		"oF": 0
 		},
 	"\/todo-template-form.html": {
