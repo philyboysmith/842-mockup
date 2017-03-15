@@ -1,0 +1,119 @@
+    <!-- @import "/inc/header.html" -->
+
+    <div class="row full">
+      
+      <div class="content medium-12 large-9 columns">
+ 
+<div class="row">
+
+      <div class="large-12 columns">
+        <h1>My Tasks Dashboard</h1>
+        <p>This is the standard staff dashboard allowing users to see what work is due when. Users will be able to sort content</p>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <table class="unstriped">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Due date</th>
+            <th>Member</th>
+            <th>Priority</th>
+            <th>Project</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="is-hidden" id="showComplete" data-toggler="is-hidden" >
+            <td><label><input type="checkbox" checked> Do a prototype</label>
+            </td>
+            <td>01/04/2017</td>
+            <td>eightfourtwo ltd</td>
+            <td>High</td>
+            <td>Implementation</td>
+          </tr>
+          <tr style="color:#ffae00;">
+            <td><label style="color:#ffae00;"><input type="checkbox"> Build a system <span class="button secondary round tiny float-right" style="margin: 0;">1 comment</span></label>
+            </td>
+            <td>28/02/2017</td>
+            <td>eightfourtwo ltd</td>
+            <td>Low</td>
+            <td>Implementation</td>
+          </tr>
+          <tr class="is-hidden" id="showUnavailable" data-toggler="is-hidden" >
+            <td><label><input type="checkbox"> Make it work <span class="button warning round tiny float-right" style="margin: 0;">Not available until 28/04/2017</span></label>
+            </td>
+            <td>05/05/2017</td>
+            <td>eightfourtwo ltd</td>
+            <td>Low</td>
+            <td>Implementation</td>
+          </tr>
+          
+          <tr>
+            <td><label><input type="checkbox"> Build a system </label>
+            </td>
+            <td>28/04/2017</td>
+            <td>eightfourtwo ltd</td>
+            <td>Low</td>
+            <td>Implementation</td>
+          </tr>
+          <tr>
+            <td><label><input type="checkbox"> Build a system <span class="button secondary round tiny float-right" style="margin: 0;">1 comment</span></label>
+            </td>
+            <td>28/04/2017</td>
+            <td>eightfourtwo ltd</td>
+            <td>Low</td>
+            <td>Implementation</td>
+          </tr>
+        </tbody>
+      </table>
+                <button class="button">Download</button>
+
+</div></div>
+<div class="sidebar medium-12 large-3 columns secondary" id="showSidebar" data-toggler="is-hidden" >
+        <div class="middle-header"> 
+          <br />
+          <div class="spacing">
+            <button class="button small" data-toggle="showUnavailable">Show unavailable</button>
+            <button class="button small" data-toggle="showComplete">Show Complete</button>
+          </div>
+            
+          <div class="row">
+              <div class="small-12 columns">
+                <label for="right-label">Start date</label>
+              </div>
+              <div class="small-12 columns">
+                <input type="date" id="right-label" placeholder="28/04/2017">
+              </div>
+            </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="right-label">Due date</label>
+            </div>
+            <div class="small-12 columns">
+              <input type="date" id="right-label" placeholder="28/04/2017">
+            </div>
+          </div>
+
+          <div class="row">
+                      <div class="small-12 columns">
+                        <label for="right-label">Client:</label>
+                      </div>
+                      <div class="small-12 columns">
+                        <select name="" id="">
+                          <option value="">None</option>
+                          <option value="Technical Analyst">amillionmonkeys ltd</option>
+                          <option value="Technical Assistant">eightfourtwo ltd</option>
+
+                        </select>
+                      </div>
+                    </div>
+
+          <button class="button">Filter</button>
+
+        </div> 
+      </div>
+    </div>
+
+    <!-- @import "/inc/footer.html" -->

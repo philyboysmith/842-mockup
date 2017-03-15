@@ -1,0 +1,226 @@
+    <!-- @import "/inc/header.html" -->
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>To Do Template</h1>
+        <p>Like Basecamp administrators will be able to create to do templates. These will be used when events are triggered. For example a meeting takes place or a date passed.</p>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="callout secondary clearfix">
+
+        <div class="large-12 columns">
+
+          <form>
+            <div class="row">
+              <label>Template title <input type="text" placeholder="e.g. Implementation Meeting (Business)"></label>
+            </div>
+
+            <div class="row">
+              <div class="button-group">
+                <a class="button" data-toggle="eventBased ">Tasks are manually created</a>
+                <a class="button" data-toggle="eventBased ">Tasks are triggered by an event</a>
+                <a class="button" data-toggle="frequencyBased">Tasks should occur at a regular frequency</a>
+              </div>
+            </div>
+
+            <div class="row is-hidden" id="eventBased" data-toggler="is-hidden" >
+              <label>Trigger Event
+                <select>
+                  <option value="">None</option>
+                  <option value="Initial meeting">Initial meeting</option>
+                  <option value="Engagement meeting">Engagement meeting</option>
+                  <option value="Review meeting">Review meeting</option>
+                  <option value="Implementation meeting">Implementation meeting</option>
+                  <option value="Ongoing meeting">Ongoing meeting</option>
+                  <option value="Annual review meeting">Annual review meeting</option>
+                </select>
+              </label>
+            </div>
+            <div class="is-hidden" id="frequencyBased" data-toggler="is-hidden" >
+              <div class="row">
+                <label>Frequency
+                  <select>
+                    <option value="">None</option>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthyl">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Annually">Annually</option>
+                  </select>
+                </label>
+              </div>
+              <div class="row">
+                <label>Who should this apply to
+                  <select>
+                    <option value="">None</option>
+                    <option value="Daily">All clients</option>
+                    <option value="Weekly">Business only</option>
+                    <option value="Monthyl">Personal only</option>
+                    <option value="Quarterly">Tier 1 only</option>
+                    <option value="Annually">Tier 2 only</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="row ">
+              <label>Task order
+                <select>
+                  <option value="">Parallel (tasks can be done in any order)</option>
+                  <option value="Sequential">Sequential (events must be done in order)</option>
+                </select>
+              </label>
+            </div>
+            <div class="row">
+              <button class="button" data-toggle="addTasks">Create</button>              
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row ">
+
+
+          <h2>Tasks</h2>
+          <ul class="accordion" data-accordion>
+            <li class="accordion-item " data-accordion-item>
+              <a href="#" class="accordion-title">Request market summary</a>
+              <div class="accordion-content" data-tab-content>
+                <form>
+                  <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" >Task title</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" value="Request market summary">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" >Task description</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" placeholder="Optional" value="This always takes longer than expected.">
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="right-label" data-tooltip aria-haspopup="true" class="text-right has-tip" data-disable-hover="false" tabindex="1" title="This is only required for none sequential templates.">Start date</label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="right-label" placeholder="+5 days" value="+ 5 days" />
+                        </div>
+                      </div>
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" data-tooltip aria-haspopup="true" class="text-right has-tip" data-disable-hover="false" tabindex="1" title="This is the field which will be the key metric for KPIs.">Due date</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" placeholder="+6 days" value="+ 10 days" />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label">Who is responsible:</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <select name="" id="">
+                          <option value="Technical Analyst">Technical Analyst</option>
+                          <option value="Technical Assistant">Technical Assistant</option>
+                          <option value="Technical Specialist" selected>Technical Specialist</option>
+                          <option value="Relationship Manager">Relationship Manager</option>
+                          <option value="Technical Manager">Technical Manager</option>
+                          <option value="Compliance Manager">Compliance Manager</option>
+                          <option value="Financial Planner">Financial Planner</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label">Priority:</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <select name="" id="">
+                          <option value="Low">Low</option>
+                          <option value="Medium">Medium</option>
+                          <option value="High" selected>High</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  <button class="button">Update task</button>
+                </form>
+              </div>
+            </li>
+            <li class="accordion-item is-active" data-accordion-item>
+              <a href="#" class="accordion-title">Add a task</a>
+              <div class="accordion-content" data-tab-content>
+                <form>
+                  <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" >Task title</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" >Task description</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" placeholder="Optional">
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="right-label" data-tooltip aria-haspopup="true" class="text-right has-tip" data-disable-hover="false" tabindex="1" title="This is only required for none sequential templates.">Start date</label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="right-label" placeholder="+5 days">
+                        </div>
+                      </div>
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" data-tooltip aria-haspopup="true" class="text-right has-tip" data-disable-hover="false" tabindex="1" title="This is the field which will be the key metric for KPIs.">Due date</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" placeholder="+6 days">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label">Who is responsible:</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <select name="" id="">
+                          <option value="Technical Analyst">Technical Analyst</option>
+                          <option value="Technical Assistant">Technical Assistant</option>
+                          <option value="Technical Specialist">Technical Specialist</option>
+                          <option value="Relationship Manager">Relationship Manager</option>
+                          <option value="Technical Manager">Technical Manager</option>
+                          <option value="Compliance Manager">Compliance Manager</option>
+                          <option value="Financial Planner">Financial Planner</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  <button class="button">Add task</button>
+                </form>
+              </div>
+            </li>
+            <li class="accordion-item " data-accordion-item>
+              <a href="#" class="accordion-title">Add a task</a>
+              <div class="accordion-content" data-tab-content>
+              </div></li>
+          </ul>
+
+    </div>
+
+    <!-- @import "/inc/footer.html" -->
