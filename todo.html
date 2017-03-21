@@ -21,6 +21,7 @@
               <li><a href="todo-adhoc-form.html">Create an ad-hoc to do</a></li>
               <li><a href="todo-my-tasks.html">My tasks</a></li>
               <li><a href="todo-everyones-tasks.html">All tasks</a></li>
+              <li><a href="todo.html">To do item</a></li>
             </ul>
           </li>
           <li><a href="#">Management Dashboards</a></li>
@@ -36,6 +37,15 @@
           <label for="" class="h2"><h4><input type="checkbox">&nbsp; Task title</h4></label>
 <form>
                  
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" >Status</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <p class="badge success">&nbsp;</p>
+                      </div>
+                    </div>
+
                     <div class="row">
                       <div class="small-3 columns">
                         <label for="right-label" >Task description</label>
@@ -54,13 +64,20 @@
                       </div>
                     <div class="row">
                       <div class="small-3 columns">
+                        <label for="right-label">Out performance date</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" value="08/04/2017" readonly>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="small-3 columns">
                         <label for="right-label">Due date</label>
                       </div>
                       <div class="small-9 columns">
                         <input type="text" id="right-label" value="28/04/2017" readonly>
                         <p class="help-text" id="passwordHelpText" data-open="changeDate">Need to change this?</p>
-                        
-
                       </div>
                     </div>
                       <div class="reveal" id="changeDate" data-reveal>
